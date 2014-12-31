@@ -3,6 +3,11 @@
     height:700px;
 }
 
+#nav{
+    position:fixed;
+    background-color:purple;
+}
+
 #Home{
   background-color:red;
 }
