@@ -4,6 +4,8 @@
 }
 
 #nav{
+    margin-top:-10;
+    height:50px;
     width:100%;
     position:fixed;
     background-color:purple;
