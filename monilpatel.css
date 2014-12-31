@@ -59,11 +59,13 @@ ul{
     font-family:Trebuchet MS;
     float:left;
     display:inline;
+    background-color:red;
 }
 
 #navbutton{
     color:black;
     text-align:right;
     float:right;
+    background-color:violet;
 }
 
