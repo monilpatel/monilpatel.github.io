@@ -1,12 +1,10 @@
 
 #nav{
     margin:0;
-    padding:0;
-    float:left;
     height:60px;
     width:100%;
     position:fixed;
-    background-color:#405A75;
+    background-color:blue;
     z-index:1;
 }
 
