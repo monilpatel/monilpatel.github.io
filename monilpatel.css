@@ -57,7 +57,7 @@ ul{
     text-align:center;
     font-family:Trebuchet MS;
     float:left;
-    display:inline-block;
+    display:inline;
 }
 
 #navbutton{
