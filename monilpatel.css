@@ -63,5 +63,6 @@ ul{
 #navbutton{
     color:black;
     text-align:right;
+    float:right;
 }
 
