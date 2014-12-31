@@ -62,7 +62,7 @@ ul{
 
 #navbutton{
     clear: left;
-    float: right;
+    text-align:right;
     color:white;
 }
 
