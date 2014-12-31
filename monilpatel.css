@@ -12,7 +12,7 @@ html, body {
     position:fixed;
     background-color:#405A75;
     z-index:1;
-    padding-right:100px;
+    padding-right:200px;
   }
 
 #Home{
@@ -60,7 +60,6 @@ ul{
     float:left;
     display:inline;
     background-color:red;
-    margin-right:100px;
 }
 
 #navbutton{
