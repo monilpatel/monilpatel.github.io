@@ -12,7 +12,8 @@ html, body {
     position:fixed;
     background-color:#405A75;
     z-index:1;
-    padding:auto;
+    padding-left:100px;
+    padding-right:100px;
   }
 
 #Home{
@@ -54,10 +55,9 @@ ul{
 }
 
 #navtitle{
-    margin-left:50px;
     color:white;
     font-family:Trebuchet MS;
-    float:left;
+    text-align:left;
     display:inline;
     background-color:red;
 }
@@ -65,7 +65,7 @@ ul{
 #navbutton{
     display:inline;
     color:black;
-    float:right;
+    text-align:right;
     background-color:violet;
 }
 
