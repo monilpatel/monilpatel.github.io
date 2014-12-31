@@ -56,5 +56,13 @@ ul{
     color:white;
     text-align:center;
     font-family:Trebuchet MS;
+    float:left;
+    display:inline-block;
+}
+
+#navbutton{
+    clear: left;
+    float: right;
+    color:white;
 }
 
