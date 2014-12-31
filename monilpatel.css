@@ -1,1 +1,20 @@
-hello world
+.Section{
+    width:100%;
+    height:60px;
+}
+
+#Home{
+  background-color:red;
+}
+
+#About{
+  background-color:blue;
+}
+
+#Gallery{
+  background-color:green;
+}
+
+#Contact{
+  background-color:yellow;
+}
