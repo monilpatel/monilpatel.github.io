@@ -61,9 +61,8 @@ ul{
 }
 
 #navbutton{
-    clear: left;
-    text-align:right;
-    color:white;
-    margin-left:50px;
+    display:inline;
+    color:black;
+    margin-left:40px;
 }
 
