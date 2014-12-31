@@ -63,6 +63,7 @@ ul{
 }
 
 #navbutton{
+    display:inline;
     color:black;
     text-align:right;
     float:right;
