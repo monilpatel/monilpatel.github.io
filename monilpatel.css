@@ -4,11 +4,14 @@
 }
 
 #nav{
+    width:100%;
     position:fixed;
     background-color:purple;
 }
 
 #Home{
+   position:relative;
+   margin-top:50px;
   background-color:red;
 }
 
