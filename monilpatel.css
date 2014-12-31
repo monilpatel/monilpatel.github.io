@@ -11,13 +11,12 @@
 }
 
 #Home{
-   position:relative;
    background-color:red;
 }
 
 #homescreen{
     position:relative;
-    margin-top:500px;
+    margin-top:50px;
 }
 
 #About{
