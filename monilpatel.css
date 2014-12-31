@@ -12,6 +12,8 @@ html, body {
     position:fixed;
     background-color:#405A75;
     z-index:1;
+    padding-right:5px;
+    padding-left:5px;
 }
 
 #Home{
