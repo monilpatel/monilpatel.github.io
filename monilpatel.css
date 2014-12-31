@@ -60,6 +60,7 @@ ul{
     float:left;
     display:inline;
     background-color:red;
+    margin-right:100px;
 }
 
 #navbutton{
