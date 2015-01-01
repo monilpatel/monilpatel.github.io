@@ -60,12 +60,13 @@ ul{
     text-align:left;
     display:inline-block;
     position:fixed;
+    line-height:5%;
     
 }
 
 #navbutton{
     
-    font-size:1em;
+    font-size:100%;
     padding-right:10%;
     display:inline-block;
     color:white;
