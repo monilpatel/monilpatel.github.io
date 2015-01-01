@@ -25,6 +25,7 @@
 }
 
 #About{
+    left:0px;
     width:100%;
     height:700px;
     background-color:#DDE0E2;
@@ -33,6 +34,7 @@
 }
 
 #Gallery{
+    left:0px;
     width:100%;
     height:700px;
     background-color:#f7f7f7;
@@ -41,6 +43,7 @@
 }
 
 #Contact{
+    left:0px;
     width:100%;
     height:700px;
     background-color:#fafafa;
@@ -59,14 +62,9 @@ ul{
     padding-left:15%;
     color:white;
     font-family:Trebuchet MS;
-    /*text-align:left;
-    display:inline-block;
-    position:fixed;
-    line-height:4%;*/
     margin: 0;
     position: absolute;
     top: 50%;
-
     margin-right: -50%;
     transform: translate(-50%, -50%)
     overflow:scroll;
