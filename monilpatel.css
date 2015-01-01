@@ -54,13 +54,21 @@ ul{
 
 #navtitle{
     font-size:200%;
-    padding-left:10%;
+    /*padding-left:10%;*/
     color:white;
     font-family:Trebuchet MS;
-    text-align:left;
+    /*text-align:left;
     display:inline-block;
     position:fixed;
-    line-height:5%;
+    line-height:4%;*/
+    
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
     
 }
 
