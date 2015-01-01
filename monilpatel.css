@@ -6,14 +6,12 @@
 }*/
 
 #nav{
-    left:0px;
-    top:0px;
     height:10%;
     width:100%;
     position:fixed;
     background-color:#136182;
-    z-index:1;
-    padding-right:100px;
+    top:0;
+    z-index:100;
   }
 
 #Home{
@@ -60,26 +58,28 @@ ul{
 
 #navtitle{
     font-size:200%;
-    padding-left:15%;
+    float:right;
     color:white;
     font-family:Trebuchet MS;
-    margin: 0;
+   /* margin: 0;
     position: absolute;
     top: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-    overflow:scroll;
+    overflow:scroll;*/
     
 }
 
 #navbutton{
-    
-    font-size:100%;
+    float:left;
+    margin-left:50px;
+    padding-top:20px;
+   /* font-size:100%;
     padding-right:5%;
     display:inline-block;
     color:white;
     float:right;
     font-family:Trebuchet MS;
-    top: 50%;
+    top: 50%;*/
 }
 
