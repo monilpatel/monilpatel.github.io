@@ -79,8 +79,8 @@ ul{
     float:right;
     font-family:Trebuchet MS;
     
-    margin: 50%;
-    position: absolute;
+    margin: 80%;
+    /*position: absolute;*/
     top: 50%;
 }
 
