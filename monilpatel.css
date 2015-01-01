@@ -53,8 +53,7 @@ ul{
 }
 
 #navtitle{
-    padding-left:20%;
-    padding-right:20%;
+    padding-left:10%;
     color:white;
     font-family:Trebuchet MS;
     text-align:left;
@@ -62,6 +61,7 @@ ul{
 }
 
 #navbutton{
+    padding-right:10%;
     display:inline-block;
     color:black;
     float:right;
