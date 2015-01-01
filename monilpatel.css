@@ -58,11 +58,11 @@ ul{
     color:white;
     font-family:Trebuchet MS;
     text-align:left;
-    display:inline;
+    display:inline-block;
 }
 
 #navbutton{
-    display:inline;
+    display:inline-block;
     color:black;
     text-align:right;
 }
