@@ -53,6 +53,7 @@ ul{
 }
 
 #navtitle{
+    max-width : 320px
     font-size:200%;
     padding-left:10%;
     color:white;
@@ -63,6 +64,7 @@ ul{
 }
 
 #navbutton{
+    
     font-size:1em;
     padding-right:10%;
     display:inline-block;
