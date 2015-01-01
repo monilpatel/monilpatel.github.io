@@ -82,4 +82,8 @@ ul{
     font-family:Trebuchet MS;
     top: 50%;*/
 }
+li{
+    float:left;
+    margin-left:15px;
+}
 
