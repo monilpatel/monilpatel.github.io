@@ -789,3 +789,7 @@ Parallax
 	}
 	
 }
+
+.col-sm-3.col-md-resume {
+	width: 50%;
+}
