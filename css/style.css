@@ -73,7 +73,7 @@ a:focus {
 }
 
 .navbar-brand h1{
-	color: #fff;
+	color: #fff; /*#fff*/
   font-size: 20px;
   line-height: 40px;
 }
@@ -304,7 +304,7 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	background: url(../img/bg1.jpg) no-repeat top center;
+	background: url(../img/bg3.jpg) no-repeat top center;
 }
 
 #intro.intro {
