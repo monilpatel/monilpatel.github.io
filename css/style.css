@@ -304,7 +304,9 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	background: url(../img/bg3.jpg) no-repeat top center;
+/*	background: url(../img/bg3.jpg) no-repeat top center;*/
+    background-color:rgb(128,185,215);
+
 }
 
 #intro.intro {
