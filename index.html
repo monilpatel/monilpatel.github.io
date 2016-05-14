@@ -89,21 +89,16 @@
             -webkit-transition-timing-function: ease;
             transition-timing-function: ease;
         }
-       
-        .aboutIcon .h4{
-            color: red;
-        }
+        
         .aboutIcon:hover h4 {
-            color: black;
+            color: #454545;
         }
         
         #aboutInfo {
             margin-top: 1%;
             color: #BFBFBF;
             text-align: center;
-            
         }
-        
         
         @media (max-width: 992px) {
             img {
@@ -111,11 +106,20 @@
             }
         }
         
-        #services{
+        #services {
             background-image: url(myImg/services3.jpg);
             background-size: cover;
             background-attachment: fixed;
             height: 90%;
+        }
+        
+        @media (max-width: 992px) {
+            .contentTitle{
+                color: #454545;
+            }
+            #aboutInfo{
+                color:#454545;
+            }
         }
     </style>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -150,19 +154,19 @@
         <div class="container" id="aboutInfo">
             <div class="row">
                 <div class="col-md-3 aboutIcon">
-                    <img class ="aboutImg" src="myImg/face.png">
+                    <img class="aboutImg" src="myImg/face.png">
                     <h4>20 Year old student studying CS at Virginia Tech</h4>
                 </div>
                 <div class="col-md-3 aboutIcon">
-                    <img class ="aboutImg" src="myImg/coding.png">
+                    <img class="aboutImg" src="myImg/coding.png">
                     <h4>Studying CS at Virginia Tech</h4>
                 </div>
                 <div class="col-md-3 aboutIcon">
-                    <img class ="aboutImg" src="myImg/art.png">
+                    <img class="aboutImg" src="myImg/art.png">
                     <h4>Enjoy painting and drawing</h4>
                 </div>
                 <div class="col-md-3 aboutIcon">
-                    <img class ="aboutImg" src="myImg/graphic%20design.png">
+                    <img class="aboutImg" src="myImg/graphic%20design.png">
                     <h4>Passion for graphic design </h4>
                 </div>
 
