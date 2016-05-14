@@ -1,311 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <head>
-	<meta name="theme-color" content="#67b0d1">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Monil Patel</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="css/animate.css" rel="stylesheet" />
-    <!-- Squad theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
-	<link href="color/default.css" rel="stylesheet">
-
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .navbar {
+            padding: 1%;
+            height: 10%;
+            background-color: white;
+            opacity: .8;
+        }
+        
+        .navbar-nav {
+            background-color: white;
+            opacity: 1;
+        }
+        
+        .navbar-toggle {
+            border: none;
+        }
+        
+        #banner {
+            height: 95%;
+            /*            background-color: yellow;*/
+            background-image: url(myImg/wallpaper%204.jpg);
+            background-size: cover;
+            background-position: bottom;
+            background-attachment: scroll;
+        }
+        
+        #intro {
+            background-color: gray;
+            opacity: .4;
+            text-align: center;
+            padding: 0;
+        }
+        
+        .contentTitle {
+            font-size: 400%;
+            margin: 0px;
+        }
+        
+        img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            width: 70%;
+        }
+        
+        .content {
+            /*            color: #BFBFBF;*/
+            /*          height: 80%;*/
+            padding-top: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 5%;
+            text-align: center;
+            -webkit-transition: .3s;
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+        }
+        
+        .contentTitle {
+            color: #BFBFBF;
+        }
+        
+        .content:hover h1 {
+            color: #454545;
+        }
+        
+        hr {
+            border-color: #d9d9d9;
+        }
+        
+        .aboutIcon:hover img {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            -webkit-transition: .3s;
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+        }
+       
+        .aboutIcon .h4{
+            color: red;
+        }
+        .aboutIcon:hover h4 {
+            color: black;
+        }
+        
+        #aboutInfo {
+            margin-top: 1%;
+            color: #BFBFBF;
+            text-align: center;
+            
+        }
+        
+        
+        @media (max-width: 992px) {
+            img {
+                width: 40%;
+            }
+        }
+        
+        #services{
+            background-image: url(myImg/services3.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            height: 90%;
+        }
+    </style>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-left" href="#"><b>MP</b></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#banner">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-	<!-- Preloader -->
-	<div id="preloader">
-	  <div id="load"></div>
-	</div>
-
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <h1>MP</h1>
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#intro">Home</a></li>
-        <li><a href="#about">About</a></li>
-		<li><a href="#service">Service</a></li>
-		<li><a href="#contact">Contact</a></li>
-      </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-	<!-- Section: intro -->
-    <section id="intro" class="intro">
-	
-		<div class="slogan">
-			<h2>Monil <span class="text_color">Patel</span> </h2>
-			<h4>I am an 19 year old student currently studying Computer Science at Virginia Tech. </h4>
-		</div>
-		<div class="page-scroll">
-			<a href="#service" class="btn btn-circle">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-		</div>
-    </section>
-	<!-- /Section: intro -->
-
-	<!-- Section: about -->
-    <section id="about" class="home-section text-center">
-		<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>About</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
-
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="container">
-
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="0.2s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Monil Patel</h5>
-                        <p class="subtitle">Student at Virginia Polytechnic Institute</p>
-                        <div class="avatar"><img src="img/team/6.jpg" alt="" class="img-responsive img-circle" style="width" /></div>
-                    </div>
+<body>
+    <div id="banner">
+    </div>
+    <div class="content" id="about">
+        <h1 class="contentTitle">About</h1>
+        <hr>
+        <div class="container" id="aboutInfo">
+            <div class="row">
+                <div class="col-md-3 aboutIcon">
+                    <img class ="aboutImg" src="myImg/face.png">
+                    <h4>20 Year old student studying CS at Virginia Tech</h4>
                 </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="0.5s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>CS</h5>
-						<p class="subtitle">I am currently studying Computer Science</p>
-                        <div class="avatar"><img src="img/team/cs.jpg" alt="" class="img-responsive img-circle" /></div>
-
-                    </div>
+                <div class="col-md-3 aboutIcon">
+                    <img class ="aboutImg" src="myImg/coding.png">
+                    <h4>Studying CS at Virginia Tech</h4>
                 </div>
-				</div>
-            </div>
-        
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="0.8s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-					<h5>Art</h5>
-                        <p class="subtitle">I have always loved to paint and draw</p>
-                        <div class="avatar"><img src="img/team/art.jpg" alt="" class="img-responsive img-circle" /></div>
-
-                    </div>
+                <div class="col-md-3 aboutIcon">
+                    <img class ="aboutImg" src="myImg/art.png">
+                    <h4>Enjoy painting and drawing</h4>
                 </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="1s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Graphic Design</h5>
-                        <p class="subtitle">I enjoy making logos and graphics </p>
-                        <div class="avatar"><img src="img/team/ps.jpg" alt="" class="img-responsive img-circle" /></div>
-
-                    </div>
+                <div class="col-md-3 aboutIcon">
+                    <img class ="aboutImg" src="myImg/graphic%20design.png">
+                    <h4>Passion for graphic design </h4>
                 </div>
-				</div>
-            </div>
-        </div>		
-		</div>
-	</section>
-	<!-- /Section: about -->
-	
 
-	<!-- Section: services -->
-    <section id="service" class="home-section text-center bg-gray">
-		
-		<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>Services</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
 
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="service-box">
-                    <a href="https://drive.google.com/file/d/0B9SQPk3uG9f0X1RDR1ZJQlVIZFE/view?usp=sharing">
-					<div class="service-icon">
-						<img src="img/icons/service-icon-1.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Resume</h5>
-						<p>
-							Link to copy of my current resume.	
-							
-						</p>
-                      
-					</div>
-                        
-                         </a>
-                          
-                </div>
-                    
-				</div>
-            </div>
-			<div class="col-xs-12 col-sm-6">
-                <a href="https://drive.google.com/file/d/0B9SQPk3uG9f0Y2VQYWJnSXFZdzA/view?usp=sharing">
-
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-box">
-                    
-					<div class="service-icon">
-						<img src="img/icons/service-icon-2.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Gallery</h5>
-                        <p>Gallery of my past artwork and graphic design work</p>
-					</div>
-                </div>
-                    
-				</div>
-                </a>
-            </div>
             </div>
         </div>
-	</section>
-	<!-- /Section: services -->
-	
+    </div>
+    <div class="content" id="services">
+        <h1 class="contentTitle">Services</h1>
+    </div>
+    <div class="content" id="contact">
+        <h1 class="contentTitle">Contact</h1>
+    </div>
 
-	
 
-	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
-	<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>Contact</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
 
-					</div>
-					</div>
-				</div>
-        <div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <a href="mailto:pmonil@vt.edu">
-				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<img src="img/icons/email.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Email Me!</h5>
-						<p>
-                             Click here to email me!
-							
-						</p>
-					</div>
-                </div>
-				</div>
-                    </a>
-            </div>
-			<div class="col-xs-12 col-sm-6">
-                <a href="https://github.com/monilpatel">
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<img src="img/icons/github.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Github</h5>
-						<p>View my Github Page</p>
-					</div>
-                </div>
-				</div>
-                    </a>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    
-    
-	<!-- /Section: contact -->
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<div class="wow shake" data-wow-delay="0.4s">
-					<div class="page-scroll marginbot-30">
-						<a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up animated"></i>
-						</a>
-					</div>
-					</div>
-<!--					<p>&copy;Copyright 2014 - Squad. All rights reserved.</p>-->
-				</div>
-			</div>	
-		</div>
-	</footer>
-
-    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>
