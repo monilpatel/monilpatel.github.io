@@ -1,0 +1,78 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #1d496e;
+}
+
+p {
+  font-size: 20px;
+}
+.content {
+    height: auto;
+    padding: 15%;
+}
+
+#banner {
+    height: 95%;
+    /*            background-color: #378cd2;*/
+    background-image: url(img/wallpaper%203.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: scroll;
+}
+
+.content h2 {
+    font-size: 3em;
+}
+
+.navbar-default .navbar-brand {
+    color: #1d496e;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #1d496e;
+}
+
+#info {
+    background: #f7f9fc;
+}
+
+.navbar-default {
+    background-color: #f7f9fc;
+    border: none;
+}
+
+.caption_div {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+    .icon_col {
+        margin-top: 20px;
+    }
+.icon:hover{
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      transition: opacity 0.3s ease-in-out !important;
+    text-decoration: none !important;
+        
+}
