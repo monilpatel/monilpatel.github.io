@@ -13,7 +13,7 @@ red: ##e14952
 html,
 body {
     height: 100%;
-    font-family: Roboto, Helvetica;
+    font-family:  Roboto, Lato Helvetica;
 }
 
 a{
@@ -85,7 +85,7 @@ a:hover{
 }
 
 .fullnav {
-    font-family: 'Roboto', sans-serif;
+/*    font-family: 'Roboto', sans-serif;*/
     position: fixed;
     background: #e14952;
     top: -100%;
@@ -179,12 +179,12 @@ a:hover{
 }
 
 #info {
-    font-family: "Roboto Light";
+/*    font-family: "Roboto Light";*/
     font-size: 1.5em;
 }
 
 .icon_text {
-    font-family: "Roboto Light";
+/*    font-family: "Roboto Light";*/
     font-size: 1.5em;
 }
 
@@ -278,7 +278,7 @@ a:hover{
     /*    background: rgba(128, 69, 0, 0.36);*/
 /*    background: rgba(41, 22, 0, 0.36)*/
     /*    background: rgb(21, 40, 66);*/
-    background: #32324E;
+    background: rgb(16, 53, 85);
     background-size: cover;
 }
 
@@ -393,7 +393,7 @@ a:hover{
 }
 
 .project_detail {
-    font-family: Roboto Light, Helvetica
+/*    font-family: Roboto Light, Helvetica*/
 }
 
 .rgi_border {
@@ -455,7 +455,6 @@ a:hover{
     padding: 10%;
     display: flex;
     flex-wrap: wrap;
-    background: yellow;
 /*    width: 100%;*/
 }
 
