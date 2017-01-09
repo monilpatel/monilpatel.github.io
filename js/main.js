@@ -1,43 +1,86 @@
+//$(document).ready(function () {
+//    $('#toggle').click(function () {
+//        $(this).toggleClass('active');
+//        $('#fullnav').addClass('open');
+//        //$('.navbar').toggleClass('off');
+//
+//    });
+//    
+//    
+//    $('#close_menu').click(function(){
+//        $('#fullnav').removeClass('open');
+//    })
+//});
+//
 
-(function($) {
-    "use strict"; // Start of use strict
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
+$(window).resize(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth > 768) {
+        $(".navbar").removeClass("off");
+        $("#fullnav").removeClass("open");
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
+    }
+});
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
+var app = angular.module("myApp", ["ngRoute"]);
+
+
+app.controller('profileCtrl', function ($scope) {
+    $scope.title = "Profile "
+})
+
+.controller('MainController', function ($scope, $route, $routeParams, $location) {
+    $scope.$route = $route;
+    $scope.$location = $location;
+    $scope.$routeParams = $routeParams;
+    $scope.class = "close";
+    $scope.toggleShade = function () {
+        console.log($scope.class);
+        if ($scope.class === "open") {
+            $scope.class = "close";
+        } else {
+            $scope.class = "open";
         }
-    })
+    }
 
-    // Floating label headings for the contact form
-    $(function() {
-        $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-            $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-        }).on("focus", ".floating-label-form-group", function() {
-            $(this).addClass("floating-label-form-group-with-focus");
-        }).on("blur", ".floating-label-form-group", function() {
-            $(this).removeClass("floating-label-form-group-with-focus");
-        });
+    $scope.initPhotos = function () {
+//        function getRandomSize(min, max) {
+//            return Math.round(Math.random() * (max - min) + min);
+//        }
+//
+//        for (var i = 0; i < 2; i++) {
+//            var width = getRandomSize(200, 400);
+//            var height = getRandomSize(200, 400);
+//            $('#photos').append('<img src="//www.lorempixel.com/' + width + '/' + height + '/cats" alt="pretty kitty">');
+//        }
+
+    }
+
+})
+
+app.config(function ($routeProvider) {
+    $routeProvider
+        .when("/", {
+            templateUrl: "../pages/profile.html"
+            , controller: "profileCtrl"
+        })
+        .when("/profile", {
+            templateUrl: "../pages/profile.html"
+        })
+        .when("/portfolio", {
+            templateUrl: "../pages/portfolio_index.html"
+        })
+        .when("/resume", {
+            templateUrl: "../pages/resume.html"
+        })
+
+});
+
+app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
+    $rootScope.$on('$routeChangeSuccess', function (newRoute, oldRoute) {
+        $location.hash($routeParams.scrollTo);
+        $anchorScroll();
     });
-
-})(jQuery); // End of use strict
+});

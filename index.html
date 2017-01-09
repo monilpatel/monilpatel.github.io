@@ -4,145 +4,69 @@
 <head>
     <meta name="theme-color" content="#378cd2" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="material-icons">more_vert</i>
-                </button>
-                <a class="navbar-brand navbar-left" href="#"><b>MP</b></a>
-            </div>
-            <div class="collapse navbar-collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li class="page-scroll"><a href="#banner">Home</a></li>
-                    <li class="page-scroll"><a href="#about">About</a></li>
-                    <li class="page-scroll"><a href="#info">Info</a></li>
-                    <li class="page-scroll"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
 </head>
 
-<body>
-  <!--  <div id="banner">
-        <div class="row" id="banner_row">
-            <div class="col-lg-12 text-center">
-                <h2 id="monil" class="banner_text">MONIL PATEL</h2>
-            </div>
-        </div>
+<body ng-app="myApp">
 
-    </div>-->
-      <div id="banner">
-       <div id="banner_name">MONIL PATEL</div>
+    <div ng-controller="MainController">
+        <div class="fullnav" id="fullnav" ng-class="class">
+            <nav class="navbar" id="menu_nav">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!--                <p class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">menu</p>-->
+                        <div class="navbar-toggle" ng-click="toggleShade()">close</div>
+                        <a class="navbar-brand" href="/index.html"><img src="css/img/logo_small.png"></a>
 
-    </div>
-    <div id="about" class="content">
-        <div class="row text-row">
-            <div class="col-lg-12 text-center">
-                <h2><b>ABOUT</b></h2>
-            </div>
-        </div>
-        <div class="row item-row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 icon_col" id="about_info">
-                <p> My Name is Monil Patel. I am a 20 year old student studying Computer Science at Virginia Tech. My passion for art and graphic design as lead me to a interest in UI/UX and web design</p>
-            </div>
-            <div class="col-sm-4 icon_col" style="border-radius:50%;">
-                <a class="icon">
-                    <img src="css/img/about_img.jpg" class="img-responsive" alt="">
-                </a>
-
-            </div>
-            <div class="col-sm-2"></div>
-
-        </div>
-
-
-
-
-    </div>
-    <div id="info" class="content">
-        <div class="row text-row">
-            <div class="col-lg-12 text-center">
-                <h2><b>INFO</b></h2>
-            </div>
-
-        </div>
-        <div class="row item-row">
-            <div class="col-sm-4 icon_col">
-                <a class="icon" href="https://drive.google.com/file/d/0B3leOsCfA9QTU0s3N0gxdXUtUUk/view?usp=sharing">
-                    <img src="css/img/resume_icon.png" class="img-responsive" alt="">
-                    <div class="caption_div" style="background: #715ea1;">
-                        <p>Resume</p>
                     </div>
-                </a>
-                <!--
-                <div class="caption_div" style="background: #715ea1;">
-                    <p>Resume</p>
                 </div>
--->
-            </div>
-            <div class="col-sm-4 icon_col">
-                <a class="icon" href="https://drive.google.com/file/d/0B3leOsCfA9QTRFhNN0h0dm5uOEk/view?usp=sharing">
-                    <img src="css/img/gallery_icon.png" class="img-responsive" alt="">
-                    <div class="caption_div" style="background: #3fa9ea;">
-                        <p>Portfolio</p>
-                    </div>
-                </a>
+            </nav>
+            <div id="menu_content">
+                <div>
+                    <h3><a href="#profile" ng-click="toggleShade()">Profile</a></h3>
+                    <h3><a href="#portfolio" ng-click="toggleShade()">Portfolio</a></h3>
+
+                </div>
 
 
             </div>
-            <div class="col-sm-4 icon_col">
-                <a class="icon" href="https://github.com/monilpatel">
-                    <img src="css/img/github_icon.png" class="img-responsive" alt="">
-                    <div class="caption_div" style="background: #ef6972;">
-                        <p>GitHub</p>
-                    </div>
-                </a>
 
-            </div>
         </div>
 
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!--                <p class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">menu</p>-->
+                    <p class="navbar-toggle" ng-click="toggleShade()">menu</p>
+
+                    <a class="navbar-brand" href="#profile"><img src="css/img/logo_small.png"></a>
+
+                </div>
+                <div class="navbar-right collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--                <li><a href="#profile">                    {{$route.current.scope.title}}</a></li>-->
+
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="view" ng-view></div>
     </div>
-    <div id="contact" class="content">
-        <div class="row text-row">
-            <div class="col-lg-12 text-center">
-                <h2><b>CONTACT</b></h2>
-            </div>
-        </div>
-        <div class="row item-row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 icon_col">
-                <a class="icon">
-                    <img src="css/img/mail_icon.png" class="img-responsive" alt="">
-                    <div class="caption_div" style="background: #3fa9ea;">
-                        <p>pmonil@vt.edu</p>
-                    </div>
-                </a>
 
-
-            </div>
-            <div class="col-sm-4 icon_col">
-                <a class="icon" href='https://www.linkedin.com/in/monilpatel01'>
-                    <img src="css/img/linkin_icon.png" class="img-responsive" alt="">
-                    <div class="caption_div" style="background: #c6cbd4;">
-                        <p>LinkedIn</p>
-                    </div>
-                </a>
-
-            </div>
-            <div class="col-sm-2"></div>
-
-        </div>
-
-    </div>
 
 
 
