@@ -9,20 +9,21 @@ red: ##e14952
 
 /* Overlay style */
 
-
 html,
 body {
     height: 100%;
-    font-family:  Roboto, Lato Helvetica;
+    font-family: Roboto, Lato Helvetica;
 }
 
-a{
+a {
     color: inherit
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: inherit;
 }
+
 ::selection {
     background: #da5960;
     padding: 40px;
@@ -35,8 +36,6 @@ a:hover{
     padding: 40px;
     color: white;
 }
-
-
 
 
 /*NAVBAR*/
@@ -85,7 +84,7 @@ a:hover{
 }
 
 .fullnav {
-/*    font-family: 'Roboto', sans-serif;*/
+    /*    font-family: 'Roboto', sans-serif;*/
     position: fixed;
     background: #e14952;
     top: -100%;
@@ -179,12 +178,12 @@ a:hover{
 }
 
 #info {
-/*    font-family: "Roboto Light";*/
+    /*    font-family: "Roboto Light";*/
     font-size: 1.5em;
 }
 
 .icon_text {
-/*    font-family: "Roboto Light";*/
+    /*    font-family: "Roboto Light";*/
     font-size: 1.5em;
 }
 
@@ -203,9 +202,10 @@ a:hover{
     padding: 5%;
 }
 
-.text{
+.text {
     cursor: auto;
 }
+
 .icon:hover {
     color: #da5960;
 }
@@ -218,12 +218,12 @@ a:hover{
     animation-delay: 1s;
 }
 
-
-#resume{
+#resume {
     margin-top: 50px;
     height: 100%;
     width: 100%;
 }
+
 
 /* Safari 4.0 - 8.0 */
 
@@ -260,23 +260,32 @@ a:hover{
 #contact {
     /*    background: #F7F9FC;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
-    background: rgb(255, 255, 255);
+/*    background: rgb(255, 255, 255);*/
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+/*    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);*/
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+/*    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);*/
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+/*    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);*/
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
+/*    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);*/
     /* IE6-9 fallback on horizontal gradient */
+    
+    
+     /*    background: #FFC500;*/
+    background: #F7F9FC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,#fcfdff, #F7F9FC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,#fcfdff, #F7F9FC );
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #5F5085;
 }
 
 #portfolio_div {
     color: white;
     /*    background: rgba(128, 69, 0, 0.36);*/
-/*    background: rgba(41, 22, 0, 0.36)*/
+    /*    background: rgba(41, 22, 0, 0.36)*/
     /*    background: rgb(21, 40, 66);*/
     background: rgb(16, 53, 85);
     background-size: cover;
@@ -355,9 +364,6 @@ a:hover{
 }
 
 
-
-
-
 /*Reinventing geospatial website*/
 
 .exp_banner {
@@ -393,7 +399,7 @@ a:hover{
 }
 
 .project_detail {
-/*    font-family: Roboto Light, Helvetica*/
+    /*    font-family: Roboto Light, Helvetica*/
 }
 
 .rgi_border {
@@ -431,7 +437,6 @@ a:hover{
     margin: 0 0 15px 0;
 }
 
-
 #portfolio_content {
     margin-top: 50px;
 }
@@ -444,7 +449,13 @@ a:hover{
 
 .photo_container {
     padding: 5%;
-    background: #242d3c;
+    /*    background: #242d3c;*/
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #141E30, #243B55);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #141E30, #243B55);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .portfolio_header {
@@ -455,7 +466,7 @@ a:hover{
     padding: 10%;
     display: flex;
     flex-wrap: wrap;
-/*    width: 100%;*/
+    /*    width: 100%;*/
 }
 
 .project_photo img {
@@ -464,46 +475,67 @@ a:hover{
 }
 
 #nis_row {
+    /*    background: #FFC500;*/
     background: #FFC500;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFC500, #ffd542);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFC500, #ffd542);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#rgi_row{
+#rgi_row {
+    /*    background: #e14952;*/
     background: #e14952;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #e14952, #e07249);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #e14952, #e07249);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#aurotech_row{
+#aurotech_row {
     background: #32324E;
     color: white;
+     /*    background: #e14952;*/
+    background: #32324E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #32324E, #534c71);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #32324E, #534c71);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.img_wrapper{
+
+.img_wrapper {
     margin: auto;
     width: 20%;
 }
 
-.phone, .computer{
+.phone,
+.computer {
     margin: auto;
 }
 
-.phone{
+.phone {
     width: 80%
 }
-.computer{
+
+.computer {
     width: 100%
 }
 
-.img_description{
+.img_description {
     margin: auto;
     text-align: center;
 }
 
-.my-col{
+.my-col {
     margin: auto;
 }
 
-.my-col h3{
+.my-col h3 {
     font-weight: 700;
 }
-
 
 @media (max-width: 1200px) {
     .photos {
@@ -561,7 +593,7 @@ a:hover{
     .border-bottom {
         border-width: 10px;
     }
-    .img_wrapper{
+    .img_wrapper {
         width: 60%;
     }
 }
