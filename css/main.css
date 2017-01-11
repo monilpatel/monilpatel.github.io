@@ -330,7 +330,7 @@ p {
 
 .photo_container {
     padding: 5%;
-    /*    background: #242d3c;*/
+    background: #242d3c;
     background: #141E30;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #141E30, #243B55);
