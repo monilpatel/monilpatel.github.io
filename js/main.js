@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 
 
-AOS.init();
+//AOS.init();
 
 $(window).resize(function () {
     var viewportWidth = $(window).width();
