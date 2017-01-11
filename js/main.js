@@ -1,3 +1,20 @@
+$(document).ready(function () {
+    $('#toggle').click(function () {
+//        $(this).toggleClass('active');
+        $('#fullnav').addClass('open');
+        //$('.navbar').toggleClass('off');
+
+    });
+
+
+    $('#close_menu').click(function () {
+        $('#fullnav').removeClass('open');
+    })
+});
+
+
+AOS.init();
+
 $(window).resize(function () {
     var viewportWidth = $(window).width();
     if (viewportWidth > 768) {
@@ -8,49 +25,11 @@ $(window).resize(function () {
 });
 
 
-var app = angular.module("myApp", ["ngRoute"]);
-
-app.controller('profileCtrl', function ($scope) {
-    $scope.title = "Profile "
-})
-
-.controller('MainController', function ($scope, $route, $routeParams, $location) {
-    $scope.$route = $route;
-    $scope.$location = $location;
-    $scope.$routeParams = $routeParams;
-    $scope.class = "close";
-    $scope.toggleShade = function () {
-        console.log($scope.class);
-        if ($scope.class === "open") {
-            $scope.class = "close";
-        } else {
-            $scope.class = "open";
-        }
-    }
-
-})
-
-app.config(function ($routeProvider) {
-    $routeProvider
-        .when("/", {
-            templateUrl: "../pages/profile.html"
-            , controller: "profileCtrl"
-        })
-        .when("/profile", {
-            templateUrl: "../pages/profile.html"
-        })
-        .when("/portfolio", {
-            templateUrl: "../pages/portfolio_index.html"
-        })
-        .when("/resume", {
-            templateUrl: "../pages/resume.html"
-        })
-
-});
-
-app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
-    $rootScope.$on('$routeChangeSuccess', function (newRoute, oldRoute) {
-        $location.hash($routeParams.scrollTo);
-        $anchorScroll();
-    });
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$('.page-scroll a').bind('click', function (event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: ($($anchor.attr('href')).offset().top - 50)
+    }, 1250, 'easeInOutExpo');
+    event.preventDefault();
 });
