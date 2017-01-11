@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#toggle').click(function () {
-//        $(this).toggleClass('active');
+        //        $(this).toggleClass('active');
         $('#fullnav').addClass('open');
         //$('.navbar').toggleClass('off');
 
@@ -8,6 +8,13 @@ $(document).ready(function () {
 
 
     $('#close_menu').click(function () {
+        $('#fullnav').removeClass('open');
+    })
+
+    $('#menu-portfolio').click(function () {
+        $('#fullnav').removeClass('open');
+    })
+     $('#menu-home').click(function () {
         $('#fullnav').removeClass('open');
     })
 });
