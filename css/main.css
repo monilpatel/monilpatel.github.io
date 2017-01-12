@@ -8,7 +8,7 @@ red: #e14952
     html,
     body {
         height: 100%;
-        font-family: Roboto, Helvetica;
+        font-family: 'Roboto', 'Helvetica';
     }
     
     ::selection {
@@ -27,7 +27,7 @@ red: #e14952
     
     body {
         font-size: 16px;
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
     
     h1 {
