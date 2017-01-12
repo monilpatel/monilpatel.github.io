@@ -428,6 +428,7 @@ red: #e14952
     }
     
     .bgClip {
+        color: white;
         background: url('../css/img/banner_font.jpg');
         background-repeat: repeat-x;
         background-position: 0 0;
